@@ -14,3 +14,4 @@
 12. Instalar `yarn add openai`
 13. Crear el archivo `pages/api/translate.ts`
 14. Crear el archivo `helpers/buildMessages.ts`
+15. Crear un cache en memoria.

@@ -1,6 +1,7 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { Configuration, OpenAIApi } from "openai";
 import { MAX_COUNT } from "@/utils/constants";
+import buildMessages from "@/helpers/buildMessages";
 
 const TOKEN_FACTOR = 4;
 const MAX_TOKENS = (MAX_COUNT / TOKEN_FACTOR) * 3;
@@ -19,7 +20,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     try {
       const response = await openai.createChatCompletion({
         model: GTP_MODEL,
-        messages: [{ role: "user", content: `Traduce de Español a Ingles: ${text}` }],
+        messages: buildMessages(text),
         temperature: 0,
         max_tokens: MAX_TOKENS,
       });

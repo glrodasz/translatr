@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import debounce from "@/utils/debounce";
+import useDebounce from "./useDebounce";
 
 const HALF_SECOND_IN_MS = 500;
 
@@ -26,7 +26,7 @@ const useTranslator = () => {
     }
   };
 
-  const debouncedTranslateText = debounce(translateText, HALF_SECOND_IN_MS);
+  const debouncedTranslateText = useDebounce(translateText, HALF_SECOND_IN_MS);
 
   useEffect(() => {
     if (inputText) {

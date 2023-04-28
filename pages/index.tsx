@@ -4,8 +4,11 @@ import Tab from "@/components/Tab";
 import Label from "@/components/Label";
 import Box from "@/components/Box";
 import Container from "@/components/Container";
+import useTranslator from "@/hooks/useTranslator";
 
 const Translator: React.FC = () => {
+  const { inputText, translatedText, handleInputChange } = useTranslator();
+
   return (
     <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
       <Container>
@@ -20,7 +23,11 @@ const Translator: React.FC = () => {
                 <i className="fas fa-exchange-alt text-gray-500 dark:text-gray-300"></i>
               </span>
             </div>
-            <Textarea placeholder="Enter your text here..." />
+            <Textarea
+              placeholder="Enter your text here..."
+              value={inputText}
+              onChange={handleInputChange}
+            />
             <Label text="0/100" />
           </Box>
           <Box>
@@ -29,7 +36,11 @@ const Translator: React.FC = () => {
               <Tab label="English" isSelected={false} />
               <Tab label="Swedish" isSelected={false} />
             </div>
-            <Textarea placeholder="Translation will appear here..." readOnly />
+            <Textarea
+              placeholder="Translation will appear here..."
+              value={translatedText}
+              readOnly
+            />
             <div className="h-6"></div>
           </Box>
         </div>

@@ -1,9 +1,9 @@
 import React from "react";
-import Textarea from "../components/Textarea";
-import Tab from "../components/Tab";
-import Label from "../components/Label";
-import Box from "../components/Box";
-import Container from "../components/Container";
+import Textarea from "@/components/Textarea";
+import Tab from "@/components/Tab";
+import Label from "@/components/Label";
+import Box from "@/components/Box";
+import Container from "@/components/Container";
 
 const Translator: React.FC = () => {
   return (

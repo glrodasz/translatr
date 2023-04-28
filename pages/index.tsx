@@ -6,8 +6,11 @@ import Box from "@/components/Box";
 import Container from "@/components/Container";
 import useTranslator from "@/hooks/useTranslator";
 
+import { MAX_COUNT } from "@/utils/constants";
+
 const Translator: React.FC = () => {
   const { inputText, translatedText, handleInputChange } = useTranslator();
+  const characterCount = inputText.length;
 
   return (
     <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
@@ -28,7 +31,7 @@ const Translator: React.FC = () => {
               value={inputText}
               onChange={handleInputChange}
             />
-            <Label text="0/100" />
+            <Label count={characterCount} maxCount={MAX_COUNT} />
           </Box>
           <Box>
             <div className="flex items-center space-x-4">

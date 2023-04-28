@@ -3,7 +3,7 @@ import React from "react";
 interface TextareaProps {
   placeholder: string;
   value: string;
-  onChange: (event: React.ChangeEvent<HTMLTextAreaElement>) => void;
+  onChange?: (event: React.ChangeEvent<HTMLTextAreaElement>) => void;
   readOnly?: boolean;
 }
 

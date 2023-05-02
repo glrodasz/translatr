@@ -15,3 +15,13 @@
 13. Crear el archivo `pages/api/translate.ts`
 14. Crear el archivo `helpers/buildMessages.ts`
 15. Crear un cache en memoria.
+
+## Testing con Vitest
+16. Instalar las dependencias `yarn add -D vitest @testing-library/react jsdom @vitejs/plugin-react` y configurar el archivo `vitest.config.ts`
+17. Crear tests para el componente `Label.tsx`
+18. Crear tests para el componente `Textarea.tsx`
+19. Crear tests para el page `index.tsx`, instalar dependencias `yarn add -D vite-tsconfig-paths`y actualizar `vitest.config.ts`
+20. Habilitar el coverage, instalar dependencia `@vitest/coverage-c8`
+21. Crear tests para el archivo de `constants.ts`
+22. Crear tests para el archivo `debounce.ts`
+23. Crear tests para el archivo `useTranslator.ts`

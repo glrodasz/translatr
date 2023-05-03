@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`[ components / Label ] > when Label is rendered > should render 1`] = `
+<DocumentFragment>
+  <div
+    class="h-6 text-right mt-2 text-sm text-gray-500 dark:text-gray-300"
+  >
+    0 / 10
+  </div>
+</DocumentFragment>
+`;

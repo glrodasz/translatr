@@ -11,12 +11,12 @@ import InputArea from "@/components/InputArea";
 import OutputArea from "@/components/OutputArea";
 
 export default function Page({
-  input,
-  output,
+  // input,
+  // output,
   params,
 }: {
-  input: ReactNode;
-  output: ReactNode;
+  // input: ReactNode;
+  // output: ReactNode;
   params: { fromTo: string[] };
 }) {
   const { fromTo } = params;

@@ -30,3 +30,5 @@
 26. Crear la implementación de `[from]/page.tsx`
 27. Crear la implementación de `[from]/[to]/page.tsx` y `OutputArea.tsx`
 28. Implementar el `isSelected` del Tab.
+29. Implementar rutas paralelas.
+30. Implementar solución "final".

@@ -25,3 +25,12 @@
 21. Crear tests para el archivo de `constants.ts`
 22. Crear tests para el archivo `debounce.ts`
 23. Crear tests para el archivo `useTranslator.ts`
+
+## Migración al directorio App
+24. Crear la primera página dummy `app/translate/[from]/page.tsx`
+25. Crear el root layout `app/layout.tsx`
+26. Crear la implementación de `[from]/page.tsx`
+27. Crear la implementación de `[from]/[to]/page.tsx` y `OutputArea.tsx`
+28. Implementar el isSelected del Tab.
+29. Implementar rutas paralelas.
+30. Implementar solución "final".

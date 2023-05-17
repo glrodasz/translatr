@@ -12,7 +12,7 @@ const useTranslator = () => {
   };
 
   const translateText = async (text: string) => {
-    const response = await fetch("api/translate", {
+    const response = await fetch("/api/translate", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

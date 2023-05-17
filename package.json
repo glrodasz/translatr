@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -17,7 +17,7 @@
     "autoprefixer": "10.4.14",
     "eslint": "8.39.0",
     "eslint-config-next": "13.3.1",
-    "next": "13.3.1",
+    "next": "^13.4.2",
     "openai": "^3.2.1",
     "postcss": "8.4.23",
     "react": "18.2.0",

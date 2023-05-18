@@ -1,3 +1,5 @@
+import { Analytics } from '@vercel/analytics/react';
+
 import Navbar from "@/components/Navbar";
 import Container from "@/components/Container";
 
@@ -24,6 +26,7 @@ export default function RootLayout({
           <Container>
             <main className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {children}
+              <Analytics />
             </main>
           </Container>
         </div>
